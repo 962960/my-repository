@@ -1,6 +1,7 @@
-<input type="text" placeholder="Associate Name"><br>
-<input type="number" placeholder="Associate Id"><br>
-<input type="text" placeholder="project Id"><br>
+<form [formGroup]="userForm" >
+<input type="text" formControlName="associateName" placeholder="Associate Name"><br>
+<input type="number" formControlName="id" placeholder="Associate Id"><br>
+<!--<input type="text" placeholder="project Id"><br>
 <input type="radio"><label>Offshore</label>
 <input type="radio"><label>Onshore</label><br>
 <input type="checkbox"><label>HTML5,CSS3,JS</label>
@@ -16,5 +17,7 @@
 <input type="checkbox"><label>Man000000goDB</label>
 <input type="checkbox"><label>TypeScript</label>
 <input type='file'>
-<textarea placeholder="comments"></textarea>
-<h1>this is sairam</h1>heyyuuuusairmmmmm
+<textarea placeholder="comments"></textarea>-->
+<button type="submit">Send</button>
+
+</form>

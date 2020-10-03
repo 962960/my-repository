@@ -1,16 +1,10 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 
 @Component({
   selector: 'app-root',
   templateUrl:"./app.component.html",
-  
-  
-
-
-  
-  
-  
   styles: [`div{
     background-color:green;
     display:flex;
@@ -27,21 +21,15 @@ import { Component } from '@angular/core';
   `]
 })
 export class AppComponent {
-  public title="sastra";
-  public wifi:any;
-  public airplane:any;
-  public tower:any;
-  public hotspot:any;
-  public darkmode:any;
-  public location:any;
-  public battery:any;
-  public colore:any;n
-  air(){
-    this.wifi=!this.wifi;
-    this.tower=!this.tower;
-    this.hotspot=!this.hotspot;
-    this.colore="black";
+  userForm:FormGroup;
+
+   ngOnInit(){
+       this.userForm=new FormGroup({
+       associateName:new FormControl("heyyy"),
+       id:new FormControl("12")
+    })
   }
+
   
 
 
